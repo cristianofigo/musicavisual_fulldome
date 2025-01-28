@@ -35,13 +35,13 @@
 3. **Para criar OP's (operadores):** botão “Tab”
 (IMAGEM)
 
-4. **Tipos de Operadores (OPs): **
-# **COMP** (Componentes): Organização de projetos e interação.
-# **TOP** (Texture Operators): Imagem, vídeo, composição, texturas e efeitos.
-# **CHOP** (Channel Operators): Controle de dados/ondas/sinais em tempo real (áudio, interatividade).
-# **SOP** (Surface Operators): Geometria 3D.
-# **MAT** (Material Operators): Materiais para 3D.
-# **DAT** (Data Operators): Dados tabulares e texto.
+##**Tipos de Operadores (OPs): **
+- **COMP** (Componentes): Organização de projetos e interação.
+- **TOP** (Texture Operators): Imagem, vídeo, composição, texturas e efeitos.
+- **CHOP** (Channel Operators): Controle de dados/ondas/sinais em tempo real (áudio, interatividade).
+- **SOP** (Surface Operators): Geometria 3D.
+- **MAT** (Material Operators): Materiais para 3D.
+- **DAT** (Data Operators): Dados tabulares e texto.
 (imagem)
 
 ## **Fluxo Nodal** (A base do TouchDesigner)
