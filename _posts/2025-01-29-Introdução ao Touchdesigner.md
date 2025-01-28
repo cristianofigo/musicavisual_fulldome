@@ -2,13 +2,13 @@
 ## **O que é o TouchDesigner?**
   - É um software de criação de conteúdos visuais e interativos em tempo real, desenvolvido pela empresa canadense Derivative
 
-## **Usos comuns:**
+## Usos comuns:
 - **Performances Audiovisuais:** Sincronização de som e imagem em tempo real.
 - **Instalações Interativas:** Respostas a estímulos externos (toque, movimento, som).
 - **Mapeamento de Projeção:** Criação de conteúdos visuais projetados em superfícies irregulares.
 - **Design Visual:** Produção de gráficos generativos, animações e efeitos especiais.
 
-## **Características principais:**
+## Características principais:
 - **Interface Nodal:**
   - Todo o projeto é construído através de nós/nodes, chamados de operadores. Esses operadores representam funções específicas (como gerar imagens, processar áudio ou controlar dispositivos) e podem ser conectados uns aos outros para criar fluxos complexos.
     
@@ -21,7 +21,7 @@
 - **Integração com Hardware e Protocolos:**
   - O TouchDesigner é projetado para gerar conteúdo visual e interativo de maneira instantânea, sem necessidade de renderização, permitindo ajustes e testes imediatos. Tornando-o ideal para aplicações ao vivo, como performances audiovisuais e projeções.
 
-## **Por que usar o TouchDesigner?**
+## Por que usar o TouchDesigner?
 1. **Acessibilidade:** 
   - Possui uma versão gratuita com recursos avançados (limitada a 1280x1280 de resolução).
     
@@ -33,7 +33,7 @@
 
 ⚠️ **Atenção:** O Touchdesigner é atualizado com frequência, geralmente a cada quatro/cinco semanas. Dessa forma, certifique-se a versão na qual estamos trabalhando.
 
-## **Explorando a Interface Básica**
+## Explorando a Interface Básica
 1. **Para navegar pela interface:** Botão direito do mouse, clica, segura e arrasta.
    
 3. **Para dar zoom:** Botão de rolagem/”bolinha” do mouse (scroll).
@@ -42,7 +42,7 @@
 4. **Para criar OP's (operadores):** botão “Tab”
 (IMAGEM)
 
-## **Tipos de Operadores (OPs): **
+## Tipos de Operadores (OPs): 
 - **COMP** (Componentes): Organização de projetos e interação.
 - **TOP** (Texture Operators): Imagem, vídeo, composição, texturas e efeitos.
 - **CHOP** (Channel Operators): Controle de dados/ondas/sinais em tempo real (áudio, interatividade).
@@ -51,7 +51,7 @@
 - **DAT** (Data Operators): Dados tabulares e texto.
 (imagem)
 
-## **Fluxo Nodal** (A base do TouchDesigner)
+## Fluxo Nodal (A base do TouchDesigner)
 - **O que é:** Conexão de nós (ou operadores) que processam dados visuais, sonoros ou interativos;
   
 - **Tipos de Conexões entre Operadores:** 
@@ -68,7 +68,7 @@
   - Feitas arrastando o mouse da saída de um operador para a entrada de outro.
   - As linhas que conectam os operadores visualizam o fluxo de dados.
 
-# **Regras das Conexões**
+## Regras das Conexões
 1. **Compatibilidade de Tipos:**
   - Apenas operadores do mesmo tipo podem ser conectados diretamente (por exemplo, TOP para TOP, CHOP para CHOP).
   - Exceção: É possível converter tipos diferentes usando operadores intermediários (ex.: um CHOP pode controlar parâmetros de um TOP).
@@ -80,7 +80,7 @@
 3. **Ordem das Entradas:**
   - Alguns operadores com múltiplas entradas (ex.: Composite TOP) interpretam a ordem das conexões para determinar como os dados serão processados.
 
-# **Modificando Conexões**
+## Modificando Conexões
 1. **Desconectar Operadores:**
   - Clique com o botão direito na linha de conexão e escolha "Disconnect".
   - Ou arraste a linha de conexão para longe e solte.
@@ -88,7 +88,7 @@
 2. **Substituir Conexões:**
   - Conecte um novo operador à entrada/saída desejada. O TouchDesigner automaticamente reconfigura o fluxo.
 
-# **Vantagens do Fluxo Nodal:
+## Vantagens do Fluxo Nodal:
 1. **Visualização Imediata:** Cada operador exibe seu resultado diretamente na interface, permitindo entender o impacto de cada etapa no fluxo.
  
 2. **Modularidade:** Projetos são criados de forma modular, facilitando alterações e ajustes.
