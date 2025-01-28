@@ -1,0 +1,33 @@
+# Introdução ao Touchdesigner
+## O que é o TouchDesigner?
+### É um software de criação de conteúdos visuais e interativos em tempo real, desenvolvido pela empresa canadense Derivative
+
+## Usos comuns:
+- Performances Audiovisuais: Sincronização de som e imagem em tempo real.
+- Instalações Interativas: Respostas a estímulos externos (toque, movimento, som).
+- Mapeamento de Projeção: Criação de conteúdos visuais projetados em superfícies irregulares.
+- Design Visual: Produção de gráficos generativos, animações e efeitos especiais.
+
+## Características principais:
+- Interface Nodal:
+  - Todo o projeto é construído através de nós/nodes, chamados de operadores. Esses operadores representam funções específicas (como gerar imagens, processar áudio ou controlar dispositivos) e podem ser conectados uns aos outros para criar fluxos complexos.
+- Processamento em Tempo Real:
+  - O TouchDesigner é projetado para gerar conteúdo visual e interativo de maneira instantânea, sem necessidade de renderização, permitindo ajustes e testes imediatos. Tornando-o ideal para aplicações ao vivo, como performances audiovisuais e projeções.
+- Versatilidade:
+  - Ele suporta várias entradas e saídas de dados, incluindo áudio, vídeo, sensores, controladores MIDI, DMX, OSC, entre outros. É possível integrar o software a dispositivos externos, como câmeras, sistemas de projeção e placas de vídeo avançadas.
+- Integração com Hardware e Protocolos:
+  - O TouchDesigner é projetado para gerar conteúdo visual e interativo de maneira instantânea, sem necessidade de renderização, permitindo ajustes e testes imediatos. Tornando-o ideal para aplicações ao vivo, como performances audiovisuais e projeções.
+
+## Por que usar o TouchDesigner?
+1. Acessibilidade: 
+  - Possui uma versão gratuita com recursos avançados (limitada a 1280x1280 de resolução).
+2. Flexibilidade: 
+  - Permite desde experimentos artísticos simples até produções comerciais complexas.
+3. Comunidade ativa: 
+  - Existe uma vasta comunidade de artistas e desenvolvedores que compartilham projetos, tutoriais e ideias.
+
+## Algumas referências: 
+
+
+
+
