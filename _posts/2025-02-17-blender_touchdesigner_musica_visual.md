@@ -57,7 +57,7 @@ Para controle dinâmico, podemos usar:
 - Python API: Para envio de dados entre Blender e TouchDesigner via UDP/TCP.
 - Spout/Syphon: Para transmissão de vídeo gerado no Blender para o TouchDesigner em tempo real.
 
-### Procedimento de Exportação
+#### Procedimento de Exportação
 1. No Blender, selecione o objeto 3D que deseja exportar.
 2. Vá até File → Export → (selecione o formato desejado) ex: *FBX (.fbx)*
 **Configurações recomendadas:**
@@ -68,11 +68,41 @@ Para controle dinâmico, podemos usar:
 - **Apply Modifiers** (se desejar a geometria final aplicada). **(Include)**
 - **Mesh e Armature** (caso tenha animações esqueléticas). **(Include)**
 
-### Importação no TouchDesigner
+#### Importação no TouchDesigner
 1. No TouchDesigner, adicione um **Geometry COMP**.
 2. Dentro do Geometry COMP, insira um **File SOP**.
 3. No File SOP, carregue o arquivo **.fbx** ou **.obj.**
 4. Se precisar de animação, conecte um **Animation COMP** e configure os controles.
 
 
-  
+### Controle de Malhas e Animações com OSC/MIDI
+Para **controlar animações externamente**, podemos usar **OSC (Open Sound Control)** ou **MIDI** para enviar comandos do Blender para o TouchDesigner.
+
+#### Controle via OSC
+- No Blender, use **Add-on OSC** Sender para transmitir dados de animação.
+- No TouchDesigner, utilize um **OSC In CHOP** para receber os valores e aplicá-los a parâmetros.
+
+#### Controle via MIDI
+- No Blender, crie uma animação e exporte os keyframes para um arquivo **MIDI**.
+- No TouchDesigner, use um **MIDI In CHOP** para mapear os valores MIDI para transformação de objetos.
+
+### Comunicação em Tempo Real via Python API  
+- No Blender, podemos utilizar a API do Python para enviar dados de posição, rotação e escala para o TouchDesigner via **UDP** ou **OSC**.
+- No TouchDesigner, podemos receber os dados com um **OSC In CHOP** e aplicá-los à posição de um objeto.
+
+### Melhor Formado 
+A melhor forma de exportação depende do seu objetivo:
+- **Para geometria estática: OBJ ou FBX.**
+- **Para animações esqueléticas: FBX.**
+- **Para animações de vértices: Alembic.**
+- **Para controle externo: OSC/MIDI/Python API.**
+
+### Referências de Aplicações
+- **Performances Audiovisuais ao Vivo**: Artistas como **Max Cooper** e **Reeps One** utilizam TouchDesigner para sincronizar visuais 3D gerados no Blender com suas performances musicais.
+- **Instalações Imersivas**: O coletivo **Obscura Digital** e **TeamLab** desenvolveram instalações projetivas interativas utilizando Blender para modelagem e TouchDesigner para processamento dinâmico.
+- **Videomapping**: Projetos como o **Light Festival** em Praga e **Mutek** utilizaram Blender para modelar superfícies arquitetônicas e TouchDesigner para projetar conteúdo responsivo em tempo real.
+- **Realidade Virtual e Aumentada**: A empresa **Moment Factory** e o **MIT Media Lab** integraram Blender e TouchDesigner em experiências de VR e AR para eventos e espaços públicos.
+- **Exploração Científica e Educacional**: O **MIT Media Lab** tem utilizado essa combinação para simulação de fenômenos naturais e explorações educacionais interativas.
+- **Cinema Experimental**: Artistas como Refik Anadol e Universal Everything combinam TouchDesigner e Blender para criar experiências visuais dinâmicas para cinema imersivo e exploração digital.
+
+
