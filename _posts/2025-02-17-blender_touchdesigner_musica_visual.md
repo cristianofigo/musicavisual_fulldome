@@ -45,6 +45,53 @@ A comunicação entre Blender e TouchDesigner ocorre de diversas formas:
 6. **Uso de instâncias de geometrias**, otimizando a performance na renderização em tempo real.
 7. **Comunicação via UDP/TCP/IP** para integração com outras plataformas e softwares externos.
 
+## Fluxo Básico de Integração
+Para demonstrar a integração prática entre Blender e TouchDesigner, siga os passos abaixo:
+- Baixe um modelo 3D
+- Acesse este link (https://sketchfab.com/) e baixe um modelo 3D no formato **.obj.**
+- Alternativamente, crie um modelo simples no Blender (como um cubo deformado) e **exporte** como **.obj.**
+    - Vá até File > Export > Wavefront (.obj).
+    - Na janela de exportação, ative as seguintes configurações:
+    - Scale: Defina um fator de escala adequado (1.0 se o modelo estiver em metros).
+    - Apply Modifiers: Habilite para garantir que todas as transformações sejam aplicadas.
+    - Include Normals: Certifique-se de que as normais estão ativadas para preservar a iluminação.
+    - Triangulate Faces: Se necessário, ative para evitar problemas de topologia.
+    - Export Selected Only: Ative se quiser exportar apenas o objeto selecionado.
+    - Clique em Export OBJ.
+
+### Importar o modelo no TouchDesigner:
+- Abra o TouchDesigner e crie um operador **Geometry (Geo)**.
+- No painel de parâmetros, clique em **"File"** e selecione o arquivo **.obj** exportado.
+- Conecte um **Phong Material** ao **Geo** e um **Light** para iluminação básica.
+
+### Configuração do Material no TouchDesigner:
+- Crie um operador **Phong MAT**.
+- No painel de parâmetros do Phong MAT, ajuste as seguintes opções:
+      - Base Color: Defina a cor base do material.
+      - Specular: Ajuste para controlar o brilho especular.
+      - Roughness: Modifique para alterar a dispersão da luz no material.
+      - Transparency: Ajuste se quiser um efeito translúcido.
+      - Conecte o Phong MAT ao Geo COMP para aplicar o material.
+
+### Adicione um efeito dinâmico:
+- Adicione um operador **Noise SOP** e conecte ao **Geo** para criar distorção na malha.
+- Ajuste os parâmetros de *Amplitude* e *Roughness* para modificar a animação.
+
+### Sincronizar com áudio:
+- Importe um arquivo de áudio para um **Audio Analysis CHOP**.
+- Conecte os valores de *Amplitude* ao parâmetro do **Noise SOP** para sincronizar o efeito com o som.
+- No Audio Analysis CHOP, ative a opção Frequency Bands para dividir o áudio em faixas de frequência.
+- Adicione um operador Math CHOP para normalizar os valores das bandas.
+- Conecte diferentes faixas de frequência a diferentes parâmetros do Geo COMP:
+      - Baixas frequências (graves): Controle a escala ou posição do modelo.
+      - Médias frequências: Ajuste distorções na malha com Noise SOP.
+      - Altas frequências (agudos): Modifique a intensidade da luz ou efeitos visuais.
+- Use um Lag CHOP para suavizar as transições entre os valores.
+
+### Renderizar e visualizar o resultado:
+- Adicione um **Camera COMP** e um **Render TOP** para visualizar a cena.
+- Ajuste a posição da câmera e a iluminação para obter melhores resultados.
+
 ### Exportação de Malhas e Animações para Controle em Tempo Real
 A exportação de modelos e animações entre os softwares pode ser feita por:
 - FBX (.fbx): Melhor opção para manter hierarquia e animações.
