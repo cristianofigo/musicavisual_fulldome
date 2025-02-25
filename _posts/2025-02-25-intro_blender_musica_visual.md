@@ -22,7 +22,8 @@ Olá! Bem vinde  este repositório dedicado à introdução ao uso do Blender pa
 
 **1. Instale o Blender:**
 - [Link para Downloard](https://www.blender.org/download/)
-- [Tutorial de como instalar o Blender](https://www.youtube.com/watch?v=v_0Nx-pMBlw) (https://www.youtube.com/watch?v=-h9xqbZclUs)
+- [Tutorial de como instalar o Blender](https://www.youtube.com/watch?v=v_0Nx-pMBlw)
+- [How to Download Blender on PC & Laptop for FREE](https://www.youtube.com/watch?v=-h9xqbZclUs)
   
 **2. Introdução à Interface do Blender:** 
 - [Tutorial de Blender em Português para iniciantes](https://www.youtube.com/watch?v=G05CR_tgb_Y)
