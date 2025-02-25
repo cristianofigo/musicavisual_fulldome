@@ -37,6 +37,7 @@ Olá! Bem vinde  este repositório dedicado à introdução ao uso do Blender pa
 - [Blender Sound Reactive Geometry Nodes](https://www.youtube.com/watch?v=XOsXZ1qDfSk)
 - [Create An Audio Visualizer Fast](https://www.youtube.com/watch?v=AOP0yARiW8U)
 - [How to sync animation to music in blender](https://www.youtube.com/watch?v=eFWN3x84NcU)
+
 **5. Renderização**
 - [O jeito CERTO de renderizar no Blender](https://www.youtube.com/watch?v=csjxmBFVZKs)
 - [Como RENDERIZAR Qualquer Coisa em Blender](https://www.youtube.com/watch?v=zzhmD2me5nM)
