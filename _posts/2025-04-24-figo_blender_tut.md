@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Blender: Como adicionar um layer 3d em uma sequência de edição de vídeo
-subtitle: Misturando edição de vídeo com animação 3D
+title: Blender -  
+subtitle: Como adicionar um layer 3d em uma sequência de edição de vídeo
 gh-repo: cristianofigo/musicavisual_fulldome
 gh-badge: [star, fork, follow]
 tags: [tutorial][blender]
