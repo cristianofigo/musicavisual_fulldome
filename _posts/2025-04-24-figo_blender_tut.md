@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blender -  
+title: Blender   
 subtitle: Como adicionar um layer 3d em uma sequência de edição de vídeo
 gh-repo: cristianofigo/musicavisual_fulldome
 gh-badge: [star, fork, follow]
