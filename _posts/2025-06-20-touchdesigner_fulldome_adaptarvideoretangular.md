@@ -22,11 +22,18 @@ author: Nala Quimera
 ### Passo a passo:
 1. Importe o vídeo
 - No Touchdesigner, aperte a tecla "Tab" e adicione o node 'Movie File In" (TOP)
+![1](https://github.com/user-attachments/assets/3a7eb5ca-7acf-468d-bd0e-ded1bf2641c9)
 - Nos parâmetros, adicione seu vídeo em "File"
+- ![2](https://github.com/user-attachments/assets/312fb8b1-f594-4b33-af1b-13f764b3fda9)
 
+ 
 2. Centralize e redimensione
 - Aperte "Tab" e adicione o node "Fit" conectado a "Movie File In"
+![3](https://github.com/user-attachments/assets/0696b8a3-5cac-4c7d-a14e-cc8d87f86ca7)
+
 - Nos parâmetros, mude a resolução em "Common" para 2048x2048 e em "Fit" mude a escala "Scale" para 2 e 2 
+![4](https://github.com/user-attachments/assets/051fa9d0-2b65-4766-ab61-66e6ef878643)
+![5](https://github.com/user-attachments/assets/00cccd53-20ec-4e7b-84ba-851990555043)
 
 3. Crie uma máscara circular
 - Adicione um "Circle" (TOP) sem conectar (ainda) a nenhum node
