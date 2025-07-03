@@ -14,6 +14,8 @@ Este um post para testar como incorporar uma sketch de p5.js no jekyll
 
 <iframe src="https://editor.p5js.org/cristianofigo/full/bY7pZ-d1M" width="440px" height= "440px"></iframe>
 
+![planilha](https://github.com/user-attachments/assets/925a60f1-4051-4ecd-8a4d-8ada53996f7e)
+
 
 Com as duas partes simétricas
 
@@ -22,3 +24,6 @@ Com as duas partes simétricas
 
 
 ![card subverso congresso ufba](https://github.com/user-attachments/assets/63cbcae0-2bbc-4baf-92e3-4f5ae5b99005)
+
+
+
